@@ -3,7 +3,7 @@ public class Main {
         EBook ebook = new EBook("There’s a Monster", "Tom Fletcher", 6.99, 10, ".pdf");
         System.out.println("Title: " + ebook.getTitle());
         System.out.println("Author: " + ebook.getAuthor());
-        System.out.println("Price: " + ebook.getPrice());
+        System.out.println("Price: RM" + ebook.getPrice());
         System.out.println("Quantity: " + ebook.getQuantity());
         System.out.println("File format: " + ebook.getFileFormat());
         ebook.openBook();
@@ -15,10 +15,10 @@ public class Main {
         System.out.println("Physical Book details:");
         System.out.println("Title: " + physicalBook.getTitle());
         System.out.println("Author: " + physicalBook.getAuthor());
-        System.out.println("Price: $" + physicalBook.getPrice());
+        System.out.println("Price: RM" + physicalBook.getPrice());
         System.out.println("Quantity: " + physicalBook.getQuantity());
         System.out.println("Weight: " + physicalBook.getWeight() + "g");
-        System.out.println("Shipping Cost: $" + physicalBook.calculateShippingCost());
+        System.out.println("Shipping Cost: RM" + physicalBook.calculateShippingCost());
         System.out.println("Weight in pounds: " + physicalBook.getWeightInPounds() + " lbs");
     }
 }
